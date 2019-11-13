@@ -1,0 +1,135 @@
+2019/11/13 11:52:52 [FATAL] [...oxycenter/pkg/initial/initial.go:59 GlobalInit()] dadasdadadadadada[logs/proxycenter.log][2]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://182.35.85.154:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 182.35.85.154:9999: connect: connection refused]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://117.95.232.116:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 117.95.232.116:9999: connect: connection refused]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://117.95.162.200:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 117.95.162.200:9999: connect: connection refused]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://144.123.71.44:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 144.123.71.44:9999: connect: connection refused]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://1.197.204.88:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 1.197.204.88:9999: connect: connection refused]
+2019/11/13 11:54:14 [ WARN] [CheckIP] testIP = http://195.191.250.38:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 195.191.250.38:3128: connect: connection refused]
+2019/11/13 11:54:15 [ WARN] [CheckIP] testIP = http://117.95.162.174:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 117.95.162.174:9999: connect: connection refused]
+2019/11/13 11:54:16 [ WARN] [CheckIP] testIP = http://183.166.20.91:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 183.166.20.91:9999: connect: connection refused]
+2019/11/13 11:54:21 [ WARN] [CheckIP] testIP = http://180.160.67.185:8118, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: EOF]
+2019/11/13 11:54:22 [ WARN] len(ips) = 93
+2019/11/13 11:54:26 [ WARN] len(ips) = 93
+2019/11/13 11:54:28 [ WARN] [CheckIP] testIP = http://183.146.157.12:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 183.146.157.12:9999: connect: connection refused]
+2019/11/13 11:54:28 [ WARN] len(ips) = 93
+2019/11/13 11:55:12 [ERROR] [...oxycenter/pkg/initial/initial.go:58 GlobalInit()] ddasddaddada
+2019/11/13 11:55:12 [ WARN] [CheckIP] testIP = http://218.3.127.2:808, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 218.3.127.2:808: connect: connection refused]
+2019/11/13 11:55:12 [ WARN] [CheckIP] testIP = http://117.57.91.7:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 117.57.91.7:9999: connect: connection refused]
+2019/11/13 11:55:12 [ WARN] [CheckIP] testIP = http://59.57.149.88:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 59.57.149.88:9999: connect: connection refused]
+2019/11/13 11:55:12 [ WARN] [CheckIP] testIP = http://182.34.37.197:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 182.34.37.197:9999: connect: connection refused]
+2019/11/13 11:55:17 [ WARN] [CheckIP] testIP = http://61.145.48.172:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 61.145.48.172:9999: connect: connection refused]
+2019/11/13 11:55:23 [ WARN] [CheckIP] testIP = http://113.128.31.93:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 113.128.31.93:9999: connect: connection refused]
+2019/11/13 11:55:23 [ WARN] [CheckIP] testIP = http://182.34.37.223:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 182.34.37.223:9999: connect: connection refused]
+2019/11/13 11:55:30 [FATAL] [...oxycenter/pkg/initial/initial.go:58 GlobalInit()] ddasddaddada
+2019/11/13 13:56:29 [ WARN] [CheckIP] testIP = http://27.152.91.111:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 27.152.91.111:9999: connect: connection refused]
+2019/11/13 13:56:34 [ WARN] [CheckIP] testIP = http://205.185.115.100:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 205.185.115.100:8080: connect: connection refused]
+2019/11/13 13:56:35 [ WARN] [CheckIP] testIP = http://198.98.55.168:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: read tcp 192.168.97.118:54635->198.98.55.168:8080: read: connection reset by peer]
+2019/11/13 13:56:36 [ WARN] [CheckIP] testIP = http://45.170.68.15:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: EOF]
+2019/11/13 13:56:38 [ WARN] len(ips) = 104
+2019/11/13 13:56:38 [ WARN] [CheckIP] testIP = http://45.77.137.21:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 45.77.137.21:8080: connect: connection refused]
+2019/11/13 13:56:42 [ WARN] len(ips) = 104
+2019/11/13 13:56:46 [ WARN] len(ips) = 104
+2019/11/13 13:56:49 [ WARN] len(ips) = 104
+2019/11/13 13:56:50 [ WARN] [CheckIP] testIP = http://158.140.169.104:8181, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: read tcp 192.168.97.118:54774->158.140.169.104:8181: read: connection reset by peer]
+2019/11/13 13:56:52 [ WARN] len(ips) = 104
+2019/11/13 13:56:55 [ WARN] len(ips) = 104
+2019/11/13 13:56:57 [ WARN] len(ips) = 104
+2019/11/13 13:56:58 [ WARN] [CheckIP] testIP = http://159.192.120.247:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: EOF]
+2019/11/13 13:57:00 [ WARN] len(ips) = 103
+2019/11/13 13:57:03 [ WARN] len(ips) = 103
+2019/11/13 13:57:06 [ WARN] len(ips) = 103
+2019/11/13 13:57:09 [ WARN] len(ips) = 103
+2019/11/13 13:57:11 [ WARN] len(ips) = 103
+2019/11/13 13:57:18 [ WARN] len(ips) = 103
+2019/11/13 13:57:21 [ WARN] len(ips) = 103
+2019/11/13 13:57:24 [ WARN] len(ips) = 103
+2019/11/13 13:57:27 [ WARN] len(ips) = 103
+2019/11/13 13:57:29 [ WARN] len(ips) = 103
+2019/11/13 13:57:32 [ WARN] len(ips) = 103
+2019/11/13 13:57:35 [ WARN] len(ips) = 103
+2019/11/13 13:57:36 [ WARN] len(ips) = 103
+2019/11/13 13:57:37 [ WARN] len(ips) = 103
+2019/11/13 13:57:40 [ WARN] len(ips) = 103
+2019/11/13 13:57:43 [ WARN] len(ips) = 103
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://198.98.56.71:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 198.98.56.71:8080: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://35.235.75.244:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 35.235.75.244:3128: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://149.56.191.12:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 149.56.191.12:8080: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://35.235.75.244:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 35.235.75.244:3128: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://171.35.223.25:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 171.35.223.25:9999: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://171.35.223.57:9999, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 171.35.223.57:9999: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://35.235.75.244:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 35.235.75.244:3128: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://149.56.191.12:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 149.56.191.12:8080: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://141.125.82.106:80, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 141.125.82.106:80: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://157.245.11.180:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.245.11.180:3128: connect: operation timed out]
+2019/11/13 13:57:44 [ WARN] [CheckIP] testIP = http://40.68.203.177:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 40.68.203.177:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.208.166:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.208.166:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.230.194:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.230.194:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://107.179.75.191:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 107.179.75.191:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://50.233.228.147:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 50.233.228.147:8080: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://52.23.250.191:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 52.23.250.191:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.230.90:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.230.90:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://96.9.69.133:50693, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 96.9.69.133:50693: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.184.30:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.184.30:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.135.197:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.135.197:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://167.71.97.196:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 167.71.97.196:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://71.187.28.75:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 71.187.28.75:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.52.135.67:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.135.67:3129: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://35.226.153.234:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 35.226.153.234:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://96.9.86.70:33742, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 96.9.86.70:33742: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://68.183.45.12:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 68.183.45.12:3128: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://50.233.42.98:51696, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 50.233.42.98:51696: connect: operation timed out]
+2019/11/13 13:57:46 [ WARN] [CheckIP] testIP = http://157.245.69.180:3128, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.245.69.180:3128: connect: operation timed out]
+2019/11/13 13:57:47 [ WARN] [CheckIP] testIP = http://84.22.46.25:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 84.22.46.25:8080: connect: connection refused]
+2019/11/13 13:57:47 [ WARN] [CheckIP] testIP = http://36.66.34.10:8080, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 36.66.34.10:8080: connect: connection refused]
+2019/11/13 13:57:47 [ WARN] [CheckIP] testIP = http://50.192.195.69:52018, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 50.192.195.69:52018: connect: operation timed out]
+2019/11/13 13:57:48 [ WARN] [CheckIP] testIP = http://157.52.184.41:3129, pollURL = http://httpbin.org/get: Error = [Get http://httpbin.org/get: proxyconnect tcp: dial tcp 157.52.184.41:3129: connect: operation timed out]
+2019/11/13 15:10:31 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:10:40 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: unexpected EOF
+2019/11/13 15:11:02 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:11:27 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:11:29 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: unexpected EOF
+2019/11/13 15:11:35 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:12:10 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 15:12:21 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: x509: certificate signed by unknown authority
+2019/11/13 15:12:56 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 15:12:59 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:13:05 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 15:38:52 [ WARN] x = 0
+2019/11/13 15:39:04 [ WARN] x = 0
+2019/11/13 15:39:11 [ WARN] x = 0
+2019/11/13 15:39:15 [ WARN] x = 0
+2019/11/13 15:39:16 [ WARN] x = 0
+2019/11/13 15:39:18 [ WARN] x = 0
+2019/11/13 15:39:20 [ WARN] x = 0
+2019/11/13 15:41:12 [ WARN] x = 0
+2019/11/13 15:41:14 [ WARN] x = 0
+2019/11/13 15:41:16 [ WARN] x = 0
+2019/11/13 15:59:14 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 16:14:09 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 16:14:20 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:01:43 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:01:52 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:02:01 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:02:05 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:02:10 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:02:14 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:03:19 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:03:22 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:03:26 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:03:29 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:03:32 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:04:19 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:04:43 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:09:27 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:09:32 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:09:36 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:09:38 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:09:38 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:09:44 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:09:46 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:14:05 [ WARN] [fileter.go][ProxtRandom]: <nil>
+2019/11/13 17:15:14 [ WARN] [fileter.go][ProxtRandom]: 没有获取到ip
+2019/11/13 17:15:52 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:16:20 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/13 17:16:23 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: Bad Request
+2019/11/13 17:16:30 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
