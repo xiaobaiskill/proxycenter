@@ -1,21 +1,15 @@
 version: '3.1'
 
 services:
-
     db:
-        image: postgres
+        image: mysql:5.7.20
         restart: always
         environment:
-            POSTGRES_PASSWORD: example
-            PGDATA: /var/lib/postgresql/data/pgdata //数据存储文件夹
+            MYSQL_ROOT_PASSWORD: mysqlroot
+            MYSQL_DATABASE: proxycenter
         volumes:
-            - ./data:/var/lib/postgresql/data/pgdata //将数据映
+            - "./Db/data:/var/lib/mysql"
+            - "./Db/conf/my.cnf:/etc/my.cnf"
         ports:
-            - 5432:5432
-        container_name: proxycenter_postgres
-
-    adminer:
-        image: adminer
-        restart: always
-        ports:
-            - 8080:8080
+            - 3307:3306
+        container_name: proxycenter-mysql

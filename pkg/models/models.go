@@ -127,6 +127,7 @@ func getEngine() (*xorm.Engine, error) {
 			connStr = fmt.Sprintf("%s:%s@tcp(%s)/%s%scharset=utf8&parseTime=true",
 				DbCfg.User, DbCfg.Passwd, DbCfg.Host, DbCfg.Name, Param)
 		}
+		fmt.Println(connStr)
 	case "postgres":
 		host, port := parsePostgreSQLHostPort(DbCfg.Host)
 		if host[0] == '/' { // looks like a unix socket

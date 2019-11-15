@@ -2,6 +2,7 @@ package register
 
 import (
 	"proxycenter/pkg/models"
+	"proxycenter/proxypool/getter"
 	"sync"
 	"unknwon.dev/clog/v2"
 )
@@ -30,4 +31,13 @@ func (r *Register) Run(ipChan chan<- *models.IP){
 	}
 	wg.Wait()
 	clog.Info("All getters finished.")
+}
+
+var Reg Register
+func init(){
+	Reg.Add(getter.Feiyi)
+	Reg.Add(getter.KDL)
+	Reg.Add(getter.IP89)
+	Reg.Add(getter.Pydl)
+	Reg.Add(getter.IP66)
 }

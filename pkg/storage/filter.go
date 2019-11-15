@@ -2,13 +2,10 @@ package storage
 
 import (
 	"proxycenter/pkg/models"
+	"proxycenter/proxypool/check/register"
 	clog "unknwon.dev/clog/v2"
 
-	//"fmt"
-	sj "github.com/bitly/go-simplejson"
-	"github.com/parnurzeal/gorequest"
 	"sync"
-	"time"
 )
 
 // CheckProxy .
@@ -20,36 +17,10 @@ func CheckProxy(ip *models.IP) {
 
 // CheckIP is to check the ip work or not
 func CheckIP(ip *models.IP) bool {
-	var pollURL string
-	var testIP string
-	if ip.Type2 == "https" {
-		testIP = "https://" + ip.Data
-		pollURL = "https://httpbin.org/get"
-	} else {
-		testIP = "http://" + ip.Data
-		pollURL = "http://httpbin.org/get"
-	}
-	begin := time.Now()
-	resp, _, errs := gorequest.New().Proxy(testIP).Get(pollURL).End()
-	if errs != nil {
-		clog.Info("[CheckIP] testIP = %s, pollURL = %s: Error = %v", testIP, pollURL, errs)
-		return false
-	}
-
-	defer resp.Body.Close()
-	if resp.StatusCode == 200 {
-		//harrybi 20180815 判断返回的数据格式合法性
-		_, err := sj.NewFromReader(resp.Body)
-		if err != nil {
-			clog.Info("[CheckIP] testIP = %s, pollURL = %s: Error = %v", testIP, pollURL, err)
-			return false
-		}
-		//harrybi 计算该代理的速度，单位毫秒
-		ip.Speed = time.Now().Sub(begin).Nanoseconds() / 1000 / 1000 //ms
-		if err = models.Update(*ip); err != nil {
+	if register.Check.Run(ip) {
+		if err := models.Update(*ip); err != nil {
 			clog.Warn("[CheckIP] Update IP = %v Error = %v", *ip, err)
 		}
-
 		return true
 	}
 	return false
@@ -81,10 +52,9 @@ func CheckProxyDB() {
 
 // ProxyRandom .
 func ProxyRandom() (ip *models.IP) {
-
 	ips, err := models.GetAll()
 	x := len(ips)
-	clog.Info("[fileter.go][ProxtRandom] len(ips) = %d", x)
+	clog.Info("[fileter.go][ProxtRandom] http: len(ips) = %d", x)
 	if err != nil || x == 0 {
 		clog.Warn("[fileter.go][ProxtRandom]: 没有获取到ip")
 		return models.NewIP()
@@ -94,17 +64,28 @@ func ProxyRandom() (ip *models.IP) {
 	return ips[randomNum]
 }
 
+func ProxyFindsToNum(num int)(ips []*models.IP, ok bool){
+	ips, err := models.GetAllToNum(num)
+	if err != nil {
+		clog.Warn("[fileter.go] [ProxyFindsToNum] 获取 代理ip 失败")
+		return
+	}
+	ok = true
+	return
+}
+
+
 // ProxyFind .
 func ProxyFind(value string) (ip *models.IP) {
 	ips, err := models.FindAll(value)
 	if err != nil {
-		clog.Warn(err.Error())
+		clog.Warn("[fileter.go] [ProxyFind] 获取 %v 代理ip 失败",value)
 		return models.NewIP()
 	}
 	x := len(ips)
-	clog.Warn("x = %d", x)
+	clog.Warn("[fileter.go] [ProxyFind] %s: len(ips) = %d",value, x)
 	randomNum := RandInt(0, x)
-	clog.Info("[proxyFind] random num = %d", randomNum)
+	clog.Info("[fileter.go] [proxyFind] random num = %d", randomNum)
 	if randomNum == 0 {
 		return models.NewIP()
 	}

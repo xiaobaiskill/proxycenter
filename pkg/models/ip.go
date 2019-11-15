@@ -21,7 +21,6 @@ func NewIP() *IP {
 
 //InsertIps SaveIps save ips info to database
 func InsertIps(ip *IP) (err error) {
-
 	ses := x.NewSession()
 	defer ses.Close()
 	if err := ses.Begin(); err != nil {
@@ -82,7 +81,16 @@ func GetOne(ip string) *IP {
 func getAll() ([]*IP, error) {
 	tmpIp := make([]*IP, 0)
 
-	err := x.Where("speed <= 1000").Find(&tmpIp)
+	err := x.Where("speed <= 5000").Find(&tmpIp)
+	if err != nil {
+		return nil, err
+	}
+	return tmpIp, nil
+}
+
+func GetAllToNum(num int)([]*IP,error){
+	tmpIp := make([]*IP, 0)
+	err := x.Limit(num,0).Asc("speed").Find(&tmpIp)
 	if err != nil {
 		return nil, err
 	}
@@ -98,7 +106,7 @@ func findAll(value string) ([]*IP, error) {
 	tmpIp := make([]*IP, 0)
 	switch value {
 	case "http":
-		err := x.Where("speed <= 1000 and type1=?", "http").Find(&tmpIp)
+		err := x.Where("speed <= 5000 and type1=?", "http").Find(&tmpIp)
 		if err != nil {
 			return tmpIp, err
 		}
@@ -108,7 +116,7 @@ func findAll(value string) ([]*IP, error) {
 		if HasHttps == false {
 			return tmpIp, nil
 		}
-		err := x.Where("speed <= 1000 and type2=?", "https").Find(&tmpIp)
+		err := x.Where("speed <= 5000 and type2=?", "https").Find(&tmpIp)
 		if err != nil {
 			fmt.Println(err.Error())
 			return tmpIp, err

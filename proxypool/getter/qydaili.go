@@ -3,21 +3,20 @@ package getter
 import (
 	"github.com/Aiicy/htmlquery"
 	"proxycenter/pkg/models"
-	"regexp"
-	"strconv"
 	"unknwon.dev/clog/v2"
 )
 
-func Pydl()(result []*models.IP){
+func Pydl() (result []*models.IP) {
+	clog.Info("[qydaili] start test")
 	pollURL := "http://www.qydaili.com/free/?action=china&page=1"
 	doc, err := htmlquery.LoadURL(pollURL)
-	if err !=nil {
-		clog.Error("[pydaili] 数据爬取失败：%+v",err)
+	if err != nil {
+		clog.Error("[pydaili] 数据爬取失败：%+v", err)
 		return
 	}
-	trNode, err := htmlquery.Find(doc, "//table[@class='table table-bordered table-striped']//tbody//tr")
+	trNode, err := htmlquery.Find(doc, "//table[@class='table table-bordered table-striped']/tbody/tr")
 	if err != nil {
-		clog.Warn("[kuaidl] 解析失败：%+v" ,err.Error())
+		clog.Warn("[kuaidl] 解析失败：%+v", err.Error())
 		return
 	}
 
@@ -37,19 +36,9 @@ func Pydl()(result []*models.IP){
 			IP.Type1 = "http"
 		}
 		IP.Speed = pyextractSpeed(speed)
+		clog.Info("[pydailil] ip = %s, type = %s speed= %d", IP.Data, IP.Type1,IP.Speed)
 		result = append(result, IP)
 	}
 	clog.Info("[pydaili] done")
 	return
-}
-
-func pyextractSpeed(oritext string) int64 {
-	reg := regexp.MustCompile(`(\d+)?\.\d+`)
-	temp := reg.FindStringSubmatch(oritext)
-
-	if len(temp) >= 2 && temp[1] != "" {
-		speed, _ := strconv.ParseInt(temp[1], 10, 64)
-		return speed
-	}
-	return -1
 }

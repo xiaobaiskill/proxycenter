@@ -3,7 +3,6 @@ package proxypool
 import (
 	"proxycenter/pkg/models"
 	"proxycenter/pkg/storage"
-	"proxycenter/proxypool/getter"
 	"proxycenter/proxypool/getter/register"
 	"time"
 	clog "unknwon.dev/clog/v2"
@@ -25,18 +24,12 @@ func Run() {
 		}()
 	}
 
-	var reg register.Register
-
-	reg.Add(getter.Feiyi)
-	reg.Add(getter.KDL)
-	reg.Add(getter.IP89)
-	reg.Add(getter.Pydl)
 	// Start getters to scraper IP and put it in channel
 	for {
 		n := models.CountIPs()
 		clog.Info("[proxycenter.go] Chan: %v, IP: %v\n", len(ipChan), n)
 		if len(ipChan) < 100 {
-			go reg.Run(ipChan)
+			go register.Reg.Run(ipChan)
 		}
 		time.Sleep(5 * time.Minute)
 	}

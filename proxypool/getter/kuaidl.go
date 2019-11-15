@@ -8,13 +8,14 @@ import (
 
 // KDL get ip from kuaidaili.com
 func KDL() (result []*models.IP) {
+	clog.Info("[kuaidaili] start test")
 	pollURL := "http://www.kuaidaili.com/free/inha/"
 	doc, err := htmlquery.LoadURL(pollURL)
 	if err !=nil {
 		clog.Error("[kuaidl] 数据爬取失败：%+v",err)
 		return
 	}
-	trNode, err := htmlquery.Find(doc, "//table[@class='table.table-bordered.table-striped']//tbody//tr")
+	trNode, err := htmlquery.Find(doc, "//table[@class='table table-bordered table-striped']/tbody/tr")
 	if err != nil {
 		clog.Warn("[kuaidl] 解析失败：%+v" ,err.Error())
 		return
@@ -34,7 +35,8 @@ func KDL() (result []*models.IP) {
 		} else if Type == "HTTP" {
 			IP.Type1 = "http"
 		}
-		IP.Speed = extractSpeed(speed)
+		IP.Speed = pyextractSpeed(speed)
+		clog.Info("[kuaidailil] ip = %s, type = %s speed= %d", IP.Data, IP.Type1,IP.Speed)
 		result = append(result, IP)
 	}
 

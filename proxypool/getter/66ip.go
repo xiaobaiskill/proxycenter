@@ -12,6 +12,7 @@ import (
 
 // IP66 get ip from 66ip.cn
 func IP66() (result []*models.IP) {
+	clog.Info("[IP66] start test")
 	var ExprIP = regexp.MustCompile(`((25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\.){3}(25[0-5]|2[0-4]\d|((1\d{2})|([1-9]?\d)))\:([0-9]+)`)
 
 	pollURL := "http://www.66ip.cn/mo.php?tqsl=100"

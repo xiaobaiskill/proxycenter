@@ -43,6 +43,11 @@ var (
 	// request
 	TimeOut int64
 
+	// clients
+	HttpClientsMax int64
+	HttpClientsMin int64
+	HttpClientLimit  int64
+
 	// 文件
 	Settings map[string]*IniParse
 )

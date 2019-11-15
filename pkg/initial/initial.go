@@ -40,6 +40,10 @@ func init() {
 	setting.MaxDays = ini.GetInt64("log.xorm", "MAX_DAYS", 3)
 
 	setting.TimeOut = ini.GetInt64("request","TIMEOUT",1000)
+
+	setting.HttpClientsMax = ini.GetInt64("clients","HTTPCLIENT_MAX",100)
+	setting.HttpClientsMin = ini.GetInt64("clients","HTTPCLIENT_MIN",10)
+	setting.HttpClientLimit = ini.GetInt64("clients","LIMIT",10)
 }
 
 func GlobalInit() {

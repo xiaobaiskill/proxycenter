@@ -5,7 +5,6 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
-	"proxycenter/workpool"
 	"proxycenter/workpool/request"
 	"strconv"
 )
@@ -27,15 +26,19 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		b, _ := strconv.ParseBool(proxy)
 		value.Proxy = b
 
-		rc := workpool.Work(value)
+		resultChan := make(chan request.Result)
 
-		result, ok := <-rc
+		value.Result = resultChan
+
+		request.PostValueChan <- value
+
+		result, ok := <-resultChan
 		if ok {
 			b,_ := json.Marshal(result)
 
 			w.Write(b)
 		}
 	} else {
-		io.WriteString(w, "不支持 get 请求")
+		io.WriteString(w, "不支持 除post之外的其他请求")
 	}
 }
