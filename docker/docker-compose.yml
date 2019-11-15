@@ -6,7 +6,7 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: mysqlroot
-            MYSQL_DATABASE: proxycenter
+            MYSQL_DATABASE: "proxycenter"
         volumes:
             - "./Db/data:/var/lib/mysql"
             - "./Db/conf/my.cnf:/etc/my.cnf"

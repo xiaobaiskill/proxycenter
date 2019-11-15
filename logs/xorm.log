@@ -2053,3 +2053,27 @@
 2019/11/15 18:05:39 [xorm] [info]  2019/11/15 18:05:39.014563 [SQL] BEGIN TRANSACTION
 2019/11/15 18:05:39 [xorm] [info]  2019/11/15 18:05:39.014752 [SQL] INSERT INTO `ip` (`data`,`type1`,`type2`,`speed`) VALUES (?, ?, ?, ?) []interface {}{"190.2.21.154:9991", "http", "", 15103}
 2019/11/15 18:05:39 [xorm] [info]  2019/11/15 18:05:39.019595 [SQL] COMMIT
+2019/11/15 18:22:17 [xorm] [info]  2019/11/15 18:22:17.954611 [SQL] SELECT `TABLE_NAME`, `ENGINE`, `TABLE_ROWS`, `AUTO_INCREMENT`, `TABLE_COMMENT` from `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`=? AND (`ENGINE`='MyISAM' OR `ENGINE` = 'InnoDB' OR `ENGINE` = 'TokuDB') [proxycenter]
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.128188 [SQL] SELECT `TABLE_NAME`, `ENGINE`, `TABLE_ROWS`, `AUTO_INCREMENT`, `TABLE_COMMENT` from `INFORMATION_SCHEMA`.`TABLES` WHERE `TABLE_SCHEMA`=? AND (`ENGINE`='MyISAM' OR `ENGINE` = 'InnoDB' OR `ENGINE` = 'TokuDB') [proxycenter]
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.144601 [SQL] CREATE TABLE IF NOT EXISTS `ip` (`id` BIGINT(20) PRIMARY KEY AUTO_INCREMENT NOT NULL, `data` VARCHAR(255) NOT NULL, `type1` VARCHAR(255) NOT NULL, `type2` VARCHAR(255) NULL, `speed` BIGINT(20) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET utf8
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.208215 [SQL] SELECT `id`, `data`, `type1`, `type2`, `speed` FROM `ip` ORDER BY `speed` ASC LIMIT 50
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.208536 [SQL] SELECT count(*) FROM `ip` WHERE (id>= ?) []interface {}{0}
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.208892 [SQL] SELECT count(*) FROM `ip` WHERE (id>= ?) []interface {}{0}
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.229906 [SQL] SELECT `id`, `data`, `type1`, `type2`, `speed` FROM `ip` WHERE (speed <= 5000)
+2019/11/15 18:29:54 [xorm] [info]  2019/11/15 18:29:54.232742 [SQL] SELECT count(*) FROM `ip` WHERE (id>= ?) []interface {}{0}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.329069 [SQL] UPDATE `ip` SET `data` = ?, `type1` = ?, `speed` = ? WHERE `id`=? []interface {}{"149.28.225.26:8080", "http", 1871, 1}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.336754 [SQL] BEGIN TRANSACTION
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.336969 [SQL] INSERT INTO `ip` (`data`,`type1`,`type2`,`speed`) VALUES (?, ?, ?, ?) []interface {}{"149.28.225.26:8080", "http", "", 1871}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.340897 [SQL] COMMIT
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.491001 [SQL] UPDATE `ip` SET `data` = ?, `type1` = ?, `speed` = ? WHERE `id`=? []interface {}{"198.98.58.178:8080", "http", 2029, 1}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.500700 [SQL] BEGIN TRANSACTION
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.500859 [SQL] INSERT INTO `ip` (`data`,`type1`,`type2`,`speed`) VALUES (?, ?, ?, ?) []interface {}{"198.98.58.178:8080", "http", "", 2029}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.504828 [SQL] COMMIT
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.537477 [SQL] UPDATE `ip` SET `data` = ?, `type1` = ?, `speed` = ? WHERE `id`=? []interface {}{"198.98.51.240:8080", "http", 2078, 1}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.543534 [SQL] BEGIN TRANSACTION
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.543623 [SQL] INSERT INTO `ip` (`data`,`type1`,`type2`,`speed`) VALUES (?, ?, ?, ?) []interface {}{"198.98.51.240:8080", "http", "", 2078}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.546644 [SQL] COMMIT
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.565662 [SQL] UPDATE `ip` SET `data` = ?, `type1` = ?, `speed` = ? WHERE `id`=? []interface {}{"67.205.136.66:8080", "http", 2101, 1}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.574716 [SQL] BEGIN TRANSACTION
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.574812 [SQL] INSERT INTO `ip` (`data`,`type1`,`type2`,`speed`) VALUES (?, ?, ?, ?) []interface {}{"67.205.136.66:8080", "http", "", 2101}
+2019/11/15 18:29:56 [xorm] [info]  2019/11/15 18:29:56.577732 [SQL] COMMIT

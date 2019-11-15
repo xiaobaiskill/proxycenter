@@ -224,3 +224,4 @@
 2019/11/15 17:57:43 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 2019/11/15 17:59:21 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 2019/11/15 17:59:27 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2019/11/15 18:22:18 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: driver: bad connection
