@@ -127,7 +127,6 @@ func getEngine() (*xorm.Engine, error) {
 			connStr = fmt.Sprintf("%s:%s@tcp(%s)/%s%scharset=utf8&parseTime=true",
 				DbCfg.User, DbCfg.Passwd, DbCfg.Host, DbCfg.Name, Param)
 		}
-		fmt.Println(connStr)
 	case "postgres":
 		host, port := parsePostgreSQLHostPort(DbCfg.Host)
 		if host[0] == '/' { // looks like a unix socket
@@ -199,9 +198,11 @@ func SetEngine() (err error) {
 // NewEngine .
 func NewEngine() (err error) {
 	if err = SetEngine(); err != nil {
+		fmt.Println("链接失败了")
 		return err
 	}
 	if err = x.StoreEngine("InnoDB").Sync2(tables...); err != nil {
+		fmt.Println("数据库同步失败了")
 		return fmt.Errorf("sync database struct error: %v", err)
 	}
 

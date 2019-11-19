@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+    go:
+        build:
+          context: ./
+          dockerfile: Dockerfile
+        restart: always
+        ports:
+          - 3000:3000
+        depends_on:
+          - db
+        volumes:
+          - "./logs:/logs"
+        container_name: proxycenter_go
+        image: proxycenter_go_image
+
+    db:
+        image: mysql:5.7.20
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: mysqlroot
+            MYSQL_DATABASE: "proxycenter"
+        volumes:
+            - "./db/data:/var/lib/mysql"
+            - "./db/conf/my.cnf:/etc/my.cnf"
+        ports:
+            - 3307:3306
+        container_name: proxycenter_mysql
+
+
+

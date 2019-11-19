@@ -225,3 +225,45 @@
 2019/11/15 17:59:21 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 2019/11/15 17:59:27 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
 2019/11/15 18:22:18 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: driver: bad connection
+2019/11/18 20:07:30 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: driver: bad connection
+2019/11/18 21:21:14 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 127.0.0.1:3306: connect: connection refused
+2019/11/18 21:21:46 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 127.0.0.1:3306: connect: connection refused
+2019/11/18 22:10:58 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 127.0.0.1:3306: connect: connection refused
+2019/11/18 22:11:12 [FATAL] [...oxycenter/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 127.0.0.1:3306: connect: connection refused
+2019/11/19 10:56:20 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.29.0.2:3306: connect: connection refused
+2019/11/19 10:58:57 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:16:04 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:16:06 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:09 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:12 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:14 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:16 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:20 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:28 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:16:42 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: Error 1130: Host '192.168.0.3' is not allowed to connect to this MySQL server
+2019/11/19 11:17:06 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:09 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:13 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:16 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:18 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:22 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:17:27 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 192.168.0.2:3306: connect: connection refused
+2019/11/19 11:25:56 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:00 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:03 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:06 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:09 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:12 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:26:29 [FATAL] [...o/release/pkg/initial/initial.go:70 GlobalInit()] Fail to initialize ORM engine: sync database struct error: dial tcp 172.31.0.2:3306: connect: connection refused
+2019/11/19 11:27:00 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:06 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:12 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:17 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:23 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:31 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:41 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:48 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:27:54 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:28:00 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:28:12 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+2019/11/19 11:28:17 [ WARN] [work.go] [Work] err : Get https://jimqaweb.mlytics.ai/cache.txt: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
